@@ -1,3 +1,8 @@
-<% @screams.each do |scream| %>
-  <%= scream.content %>
-<% end %>
+<div class="screams-container">
+  <% @screams.each do |scream| %>
+  <div class="scream">
+    <%= scream.content %>
+    <%= content_tag :span, scream.created_at, class: 'scream-date' %>
+  </div>
+  <% end %>
+</div>

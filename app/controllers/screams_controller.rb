@@ -1,6 +1,5 @@
 class ScreamsController < ApplicationController
   def new
-    @image_from_unsplash = JSON.parse(fetch_photos)
     @scream = Scream.new
   end
 
@@ -10,8 +9,7 @@ class ScreamsController < ApplicationController
   end
 
   def index
-    # @screams = Scream.all
-    redirect_to new_scream_path
+    @screams = Scream.all
   end
 
   private

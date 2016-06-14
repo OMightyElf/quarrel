@@ -1,11 +1,8 @@
-<div class="container">
-  <%= image_tag @image_from_unsplash["urls"]["full"], class: 'background-image'  %>
-  <div class="scream-content">
-    <!-- <h1>Quarrel.</h1> -->
-    <!-- <h4>How about scream it out?</h4> -->
-    <%= form_for @scream do |scream| %>
-      <%= scream.text_area :content, required: true %>
-      <%= scream.submit 'Scream' %> 
-    <% end %>
-  </div>
+<div class="scream-content">
+  <!-- <h1>Quarrel.</h1> -->
+  <!-- <h4>How about scream it out?</h4> -->
+  <%= form_for @scream do |scream| %>
+    <%= scream.text_area :content, required: true %>
+    <%= scream.submit 'Scream' %> 
+  <% end %>
 </div>

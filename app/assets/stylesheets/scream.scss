@@ -3,7 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 html, body {
-  font-family: Calibre, "Pingfang TC", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: -apple-system, Helvetica, Arial, sans-serif;
   margin: 0;
   padding: 0;
   width: 100%;
@@ -64,7 +64,6 @@ img.background-image  {
   border: none;
   border-radius: none;
   outline: none;
-  line-height: 1.7;
   transition: border 0.1s;
   resize: none;
 
@@ -95,4 +94,31 @@ textarea::-webkit-input-placeholder{
   width: 200px;
   height: 80px;
   font-size: 100%;
+}
+
+
+// index
+
+.screams-container {
+  width: 600px;
+  margin: 0 auto;
+  position: relative;
+  margin-top: 100px;
+}
+
+.scream {
+  width: 100%;
+  margin: 40px 0;
+  background-color: rgba(0,0,0,0.7);
+  padding: 30px;
+  padding-bottom: 50px;
+  position: relative;
+}
+
+.scream span.scream-date {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 10px;
+  font-size: 12px;
 }
