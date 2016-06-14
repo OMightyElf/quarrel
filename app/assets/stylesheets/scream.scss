@@ -1,3 +1,22 @@
 // Place all the styles related to the Scream controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.background {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+}
+
+.background img {
+  width: 100%;
+  bottom: 0;
+}
