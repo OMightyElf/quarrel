@@ -9,7 +9,7 @@ class ScreamsController < ApplicationController
   end
 
   def index
-    @screams = Scream.all
+    @screams = Scream.all.order(created_at: :desc)
   end
 
   private
