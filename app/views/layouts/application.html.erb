@@ -7,8 +7,8 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<div class="container">
-  <%= image_tag @image_from_unsplash["urls"]["full"], class: 'background-image'  %>
+<div class="container" style="background-image: url('<%= @image_from_unsplash["urls"]["full"] %>')">
+  <%#= image_tag @image_from_unsplash["urls"]["full"], class: 'background-image'  %>
 
   <%= yield %>
 </div>
